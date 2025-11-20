@@ -11,8 +11,8 @@ Model name is converted to lowercase for the collection name:
 - BlogPost -> "blogs" collection
 """
 
-from pydantic import BaseModel, Field
-from typing import Optional
+from pydantic import BaseModel, Field, HttpUrl
+from typing import Optional, List
 
 # Example schemas (replace with your own):
 
@@ -38,11 +38,17 @@ class Product(BaseModel):
     category: str = Field(..., description="Product category")
     in_stock: bool = Field(True, description="Whether product is in stock")
 
-# Add your own schemas here:
-# --------------------------------------------------
+# Travel app schemas
 
-# Note: The Flames database viewer will automatically:
-# 1. Read these schemas from GET /schema endpoint
-# 2. Use them for document validation when creating/editing
-# 3. Handle all database operations (CRUD) directly
-# 4. You don't need to create any database endpoints!
+class TravelSpot(BaseModel):
+    """
+    Travel spots collection schema
+    Collection name: "travelspot"
+    """
+    name: str = Field(..., description="Spot name")
+    location: str = Field(..., description="City/State/Country or coordinates")
+    description: str = Field(..., description="Detailed information about the spot")
+    images: List[HttpUrl] = Field(default_factory=list, description="List of image URLs")
+    route: str = Field(..., description="How to reach / route details")
+    tags: List[str] = Field(default_factory=list, description="Tags for search and filtering")
+    rating: Optional[float] = Field(None, ge=0, le=5, description="Average rating 0-5")
