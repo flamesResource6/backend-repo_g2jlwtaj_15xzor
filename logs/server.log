@@ -1,25 +1,11 @@
 INFO:     Will watch for changes in these directories: ['/home/workspace']
 INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
-INFO:     Started reloader process [152] using StatReload
-INFO:     Started server process [154]
+INFO:     Started reloader process [198] using StatReload
+INFO:     Started server process [200]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-INFO:     172.20.0.1:44618 - "HEAD / HTTP/1.1" 405 Method Not Allowed
-INFO:     172.20.0.1:41496 - "GET /api/spots HTTP/1.1" 200 OK
-INFO:     172.20.0.1:41496 - "GET /api/spots HTTP/1.1" 200 OK
-INFO:     172.20.0.1:41510 - "GET /api/spots HTTP/1.1" 200 OK
-INFO:     172.20.0.1:41510 - "GET /api/spots HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots?q=m HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots?q=mz HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52824 - "GET /api/spots?q=m HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52826 - "GET /api/spots?q=ma HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52824 - "GET /api/spots?q=m HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52824 - "GET /api/spots?q=m HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots?q=ma HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52824 - "GET /api/spots?q=mat HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots?q=math HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots?q=mathe HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52824 - "GET /api/spots?q=mather HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots?q=mathera HTTP/1.1" 200 OK
-INFO:     172.20.0.1:52810 - "GET /api/spots?q=matheran HTTP/1.1" 200 OK
+INFO:     172.20.0.1:33602 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:33608 - "GET /api/spots HTTP/1.1" 200 OK
+INFO:     172.20.0.1:33608 - "GET /api/spots HTTP/1.1" 200 OK
+INFO:     172.20.0.1:33618 - "GET /api/spots HTTP/1.1" 200 OK
+INFO:     172.20.0.1:44526 - "GET /api/spots HTTP/1.1" 200 OK
